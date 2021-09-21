@@ -1,0 +1,694 @@
+
+<html lang="en" >
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta charset="utf-8">
+  <title>Wire Ring</title>
+  <link rel="icon" href="img/favicon1.ico">
+  <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css" /> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
+ <!--  <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css"> -->
+<!--   <link href="css/uikit.css" rel="stylesheet" media="all"> -->
+  <link href="css/styles.css" rel="stylesheet" media="all">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+
+
+  <!-- <style type="text/css">
+    .header_inner .breadcrumb {
+    background: url(../img/breadcrumb_bg.jpg) 0 0 no-repeat;
+    height: 430px;
+    text-align: center;
+    border-radius: 0;
+}
+.breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+.header_inner .breadcrumb h2 {
+    line-height: 23px;
+    font-size: 42px;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 22%;
+    margin-bottom: 30px;
+}
+.header_inner .breadcrumb ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.header_inner .breadcrumb ul li {
+    display: inline-block;
+    margin-right: 10px;
+    line-height: 23px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 300;
+}
+.header_inner .breadcrumb ul li a {
+    line-height: 23px;
+    font-size: 14px;
+    color: #c2d650;
+    font-weight: 300;
+}
+.header_inner .breadcrumb ul li i {
+    font-size: 14px;
+    color: #c2d650;
+    margin-left: 20px;
+}
+  </style> -->
+  <style type="text/css">
+    .about_text{
+      color: #0a5089;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+    text-align: left;
+    margin: 0 0 40px 0;
+    }
+    .about_text:after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 0%;
+    background-color: #c2d650;
+    width: 50px;
+    height: 3px;
+}
+
+
+
+.history-area {
+    background: #f2f5f7;
+}
+.section-gap {
+    padding: 50px 0;
+}
+
+.tab-thumb{
+    padding: 0 0 30px 30px;
+    position: relative;
+    z-index: 2;
+}
+.tab-total-content {
+    padding: 70px 0 30px 0;
+}
+.history-tab-wrapper {
+	margin-top: 40px;
+	background: #fff;
+	position: relative;
+}
+.history-tab-wrapper:after {
+    content: "";
+    background: #f2f5f7;
+    width: 100%;
+    height: 30px;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.history-tab-wrapper .tab .nav-tabs{
+    border: none;
+    margin-bottom: 30px;
+}
+.history-tab-wrapper .tab .nav-tabs li a{
+    line-height: 40px;
+    padding: 0 25px;
+    margin-right: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #0a5089;
+    text-transform: uppercase;
+    border-radius: 0;
+    z-index: 1;
+    position: relative;
+    border-color:transparent;
+    background-color: transparent;
+    border: 1px solid #0a5089;
+    border-radius: 50px;
+}
+
+
+.history-tab-wrapper .tab .nav-tabs li a:hover{ color: #fff; }
+
+.history-tab-wrapper .tab .nav-tabs li.active a{
+    background: #0a5089;/*#8460f6*/
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 50px;
+}
+
+.history-tab-wrapper .tab .nav-tabs li a > .fa{ color: #0a5089;}
+.history-tab-wrapper .tab .nav-tabs li a:hover > .fa{ color: #fff; }
+.history-tab-wrapper .tab .nav-tabs li.active a > .fa{
+    color: #fff;
+}
+
+
+.history-tab-wrapper .tab .nav-tabs li a:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid #eee;*/
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.5s ease 0s;
+}
+/*.tab .nav-tabs li a:hover:before,
+.tab .nav-tabs li.active a:before{
+    opacity: 0;
+    transform: scale(0.5);
+}*/
+.history-tab-wrapper .tab .nav-tabs li a:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #0a5089;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    /*transform: scale(1.2);*/
+    transition: all 0.5s ease 0s;
+}
+.history-tab-wrapper .tab .nav-tabs li a:hover:after,
+.history-tab-wrapper .tab .nav-tabs li.active a:after{
+    opacity: 1;
+    transform: scale(1);
+}
+.history-tab-wrapper .tab .tab-content{
+    padding: 10px 35px 20px 0px;
+    margin: 0;
+    background: #fff;
+    font-size: 15px;
+    color: #777777;
+    letter-spacing: 1px;
+    line-height: 25px;
+    z-index: 1;
+    position: relative;
+}
+
+.history-tab-wrapper .tab .tab-content h3{
+    font-size: 24px;
+    margin-top: 0;
+}
+@media only screen and (max-width: 479px){
+    .history-tab-wrapper .tab .nav-tabs{ overflow: hidden; }
+    .history-tab-wrapper .tab .nav-tabs li{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .history-tab-wrapper .tab .nav-tabs li a{ margin-right: 0; }
+}
+
+
+
+
+.objectiveSection{
+	padding: 50px 0px;
+}
+.objectiveSection .success_sec {
+    border: 4px double #ddd;
+    padding: 10px 10px;
+    margin-top: 20px;
+}
+.objectiveSection .success_sec h4 {
+    color: #666;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    margin: 0px 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+.strength_style{
+  padding-right: 7rem;
+  text-align: justify;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="header_top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-6">
+            <ul>
+              <li class="email_style">
+                Email : <a class="dn_btn header_link" href="mailto: info@wirerings.in"><i class="fa fa-envelope"></i> info@wirerings.in</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-6">
+            <ul>
+              <li class="contact_style">Call : <a class="header_link" href="tel:+91-2525-254644">+91-2525-254644</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main_header about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-sm-3">
+            <div class="logo">
+              <a href="index.html"><img src="img/logo.png" alt="0" class="logoclass"></a>
+            </div>
+          </div>
+          <div class="col-md-10 col-sm-9">
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                    <li class="active"><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="policies.html">Policies</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <!-- <li class="dropdown ">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="sheet_metal_stamping.html">Sheet Metal (Stamping)</a></li>
+                        <li><a href="precision_machining_components.html">precision machining components </a></li>
+                        <li><a href="copper_machining_components.html">copper machining components</a></li>
+                        <li><a href="multi_formed_parts.html">multi formed parts</a></li>
+                        <li><a href="MCB_parts.html">MCB parts</a></li>
+                        <li><a href="hardware_fastners.html">Hardware & fastners</a></li>
+                      </ul>
+                    </li> -->
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                  </ul>
+                  
+                </div>
+            </nav>
+          </div>
+        </div>
+        <section class="breadcrum_div">
+          <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 style="margin-bottom: 0;"><b>ABOUT US</b></h1>
+            </div>
+          </div>
+          <div class="row">
+          <div class="col-md-12">
+            <ul class="breadcrumb custom_breadcrum">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutUs.html">About Us</a></li>
+            </ul>
+          </div>
+        </div>
+        </div>
+        </section>
+      </div>
+    </div>
+    <center><img src="img/aboutus/header_img.jpg" alt="1" class="img-responsive bg-img" style="height: 430px;width: 100%;object-fit: cover;"></center>
+  </div>
+
+  <div class="content">
+    <div class="about_us_sec">
+      <div class="" style="padding: 70px 0 50px;background-color: #f2f5f7;">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7 col-sm-6">
+              <div class="strength_style">
+              <h2 class="about_text">STRENGTH</h2>
+              <p style="color: #000;font-size: 17px;line-height: 30px;">
+                <b>Wire Rings</b> is a professionally managed company with consolidated interest in the manufacture of Step - Circlips / Snap Rings / Retaining Rings / Bearing Rings / Lock Ring; Spherical Wheelnut Conical Washers and Allied Wire Products catering to the Bearing and Automobile Industry.<br/><br/>
+                We buy round wires and Roll them into various sections such as L-Shaped; Rectangular; Square Shape etc. in close Tolerances. All these products are manufactured under strictly controlled conditions as per the International Standards. Our Integrated Quality Control System as per IATF 16949:2016 ensures that our components consistently meet the safety critical function to which our products are often subjected.
+              </p>
+              <P style="color: #000;font-size: 17px;line-height: 30px;margin-bottom: 43px;">Our Business Associates In U.S.A. - <b>NOVA / TCB USA INC</b>.</P>
+              <a id="scroll_btn" style="color: #0a5089;border: 1px solid #0a5089;font-size: 16px;cursor: pointer;">Read More...</a>
+            </div>
+            </div>
+            <div class="col-md-5 col-sm-6">
+              <div class="about_img">
+                <div class="about_img_b">
+                <div class="owl-carousel owl-theme owl-carousel2">
+                  <div class="item"><img src="img/strength_img/1.jpg" alt="0" class="img-responsive"></div>
+                  <div class="item"><img src="img/strength_img/2.jpg" alt="0" class="img-responsive"></div>
+                  <div class="item"><img src="img/strength_img/3.jpg" alt="0" class="img-responsive"></div>
+                  <div class="item"><img src="img/strength_img/4.jpg" alt="0" class="img-responsive"></div>
+                  <div class="item"><img src="img/strength_img/5.jpg" alt="0" class="img-responsive"></div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>    
+    </div>
+
+
+<div class="achievement_section section-gap">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="about_text">OUR ACHIVEMENTS</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <img src="img/achivement/1.jpg" style="width: 100%;height:260px;margin-bottom: 15px;" />
+      </div>
+      <div class="col-md-3">
+        <img src="img/achivement/2.jpg" style="width: 100%;height:260px;margin-bottom: 15px;" />
+      </div>
+      <div class="col-md-6">
+        <img src="img/achivement/3.jpg" style="width: 100%;height:260px;margin-bottom: 15px;" />
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<section class="section-gap history-area" style="padding-top: 10px;" id="div1">
+    <div class="container">
+        <div class="history-tab-wrapper">
+            <div class="row justify-content-between">
+                <div class="col-lg-4">
+                    <div class="tab-thumb text-center">
+                        <img src="img/tab-thumb.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-7">
+                    <div class="tab tab-total-content" role="tabpanel">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-map-o"></i> HISTOTY</a></li>
+                            <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-bullhorn"></i> MISSION</a></li>
+                            <li role="presentation"><a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-sun-o"></i> VISION</a></li>
+                        </ul>
+                        <div class="tab-content tabs">
+                            <div role="tabpanel" class="tab-pane fade in active" id="Section1">
+                                <h3>History</h3>
+                                <p>
+                                    Wire Rings was established in a small way in the year 1997 but today we are a market leader with an installed capacity of approximately fifteen million pieces of rings per annum. A volume twenty one times that of its first year production.
+                                </p>
+                                <p>
+                                    We are the single largest producer of snap rings and supply to all major Automobile and Bearing Industries in India. We are exporting more than 50% of our output to the Western Countries.
+                                </p>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="Section2">
+                                <h3>Mission</h3>
+                                <p>Implementation of effective quality systems so as to do the right things the first time.</p>
+                                <p>Work upon the new technology so as to increase our efficiency in producing Rings in the shortest lead time and reducing the scrap to minimum.</p>
+                                <p>Shifting the present plant to new premises to facilitate better working conditions and better environment.</p>
+                                <p>Increase the present business from 2 crores to 10 crores in next 3 years by increasing the production capacity with the help of new technology and by tapping new customers.</p>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="Section3">
+                                <h3>Vision</h3>
+                                <p>To be the best Snap Ring manufacturer and supplier in the world.</p>
+                                <p>To have the best and the leanest technology to produce a product with Zero defect.</p>
+                                <p>The word snap ring should be synonymous with the name of our organization i.e. Wire Rings!</p>
+                                <p>To have the best infrastructure and best working conditions and environment for the family of Wire Rings.</p>
+                                <p>People should be wanting to work in our organization.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="objectiveSection">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="about_text">Our Objectives</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<div class="success_sec">
+                	<center><img src="img/aboutus/1.jpg" alt="0" class="img-responsive"></center>
+                	<h4>Improve Customer Satisfaction</h4>
+              	</div>
+			</div>
+			<div class="col-md-3">
+				<div class="success_sec">
+                	<center><img src="img/aboutus/4.jpg" alt="0" class="img-responsive"></center>
+                	<h4>Reduction in Customer PPM</h4>
+              	</div>
+			</div>
+			<div class="col-md-3">
+				<div class="success_sec">
+                	<center><img src="img/aboutus/3.jpg" alt="0" class="img-responsive"></center>
+                	<h4>Reduction in In-house rejection</h4>
+              	</div>
+			</div>
+			<div class="col-md-3">
+				<div class="success_sec">
+                	<center><img src="img/aboutus/2.jpg" alt="0" class="img-responsive"></center>
+                	<h4>Increase in Sales</h4>
+              	</div>
+			</div>
+		</div>
+	</div>
+</section>
+    
+
+    <!-- ================ testimonial section start ================= -->      
+    <section class="testimonial">
+        <div class="container">
+            <div class="testi_slider owl-carousel owl-theme">
+                <div class="item">
+                    <div class="testi_item">
+                        <div class="testimonial_image">
+                            <img src="img/tes11.jpg" alt="">
+                        </div>
+                        <div class="testi_item_content">
+                            <p>
+                                "Testimonial case study to be placed here"
+                            </p>
+                            <h4>- Testimonial By -</h4>       
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="testi_item">
+                        <div class="testimonial_image">
+                            <img src="img/tes11.jpg" alt="">
+                        </div>
+                        <div class="testi_item_content">
+                            <p>
+                                "Testimonial case study to be placed here"
+                            </p>
+                            <h4>- Testimonial By -</h4>         
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="testi_item">
+                        <div class="testimonial_image">
+                            <img src="img/tes11.jpg" alt="">
+                        </div>
+                        <div class="testi_item_content">
+                            <p>
+                                "Saw kind fruitful itself in man. All in life good wherein beginning their he air That, the saw very years created for seed have without. Can't him fowl his can not ready for game"
+                            </p>
+                            <h4>- Testimonial By -</h4>       
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================ testimonial section end ================= --> 
+  </div>
+  
+  <div class="footer">
+    <div id="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-3 col-12">
+          <div class="">
+            <a href="index.html"><img src="img/footer_logo.png" alt="Logo" class="logoclass"></a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-3 col-12">
+          <div class="">
+            <!-- <h3>Contact Us</h3> -->
+            <p class="footer_text">Plot No 14/15, Dewan Udyog Nagar, Aliyali, Palghar West, Palghar 401404, Maharashtra, India.</p>
+            <p class="footer_text">Phone No: +91-2525-254644 / 55</p>
+            <p class="footer_text">Fax No: +91-2525-254668</p>
+            <p class="footer_text">Email: info@wirerings.in</p>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-3 col-12">
+          <div class="">
+            <h3 style="margin-top: 0px;">Quick Links</h3>
+            <ul class="footer_menu" style="padding-left: 0px;color: #fff;list-style-type: none;">
+              <li><a href="index.html" class="">Home</a></li>
+              <li><a href="aboutUs.html">About Us</a></li>
+              <li><a href="product.html">Products</a></li>
+              <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-3 col-12">
+          <div class="row footer-bottom_social d-flex justify-content-between">
+                  <div class="col-lg-12 col-sm-12 footer-social">
+                      <a href="#"><i class="fa fa-facebook-f"></i></a>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                      <a href="#"><i class="fa fa-google-plus"></i></a>
+                      <a href="#"><i class="fa fa-linkedin"></i></a>
+                  </div>
+              </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-12">
+          <div class="cc_text">Copyright 2019 @ WireRings | All Rights Reserved</div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+   <div class="side_btn">
+    <a href="./contactUs.html"><img src="img/enquiry_gif.gif" alt="side_btn" class="img-responsive" style="width: 85px"></a>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery.carouFredSel-6.0.4-packed.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/owl.carousel.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+	        $(".app_screenshots_slides").owlCarousel({
+	            items: 1,
+	            loop: true,
+	            autoplay: true,
+	            smartSpeed: 800,
+	            margin: 30,
+	            center: true,
+	            dots: true,
+	            responsive: {
+	                0: {
+	                    items: 1
+	                },
+	                480: {
+	                    items: 3
+	                },
+	                992: {
+	                    items: 5
+	                }
+	            }
+	        });
+		    $('.testi_slider').owlCarousel({
+                loop:true,
+                margin: 30,
+                items: 2,
+                nav:false,
+                autoplay: true,
+                dots: true,
+                smartSpeed: 1500,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    991: {
+                        items: 1,
+                    },
+                }
+            });
+    });
+
+  </script>
+
+  <script>
+    $(document).ready(function() {
+      $('.owl-carousel2').owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        nav: false,
+        autoplay:true,
+        autoplayTimeout:5000,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false
+          },
+          600: {
+            items: 1,
+            nav: false
+          },
+          1000: {
+            items: 1,
+            loop: true,
+            margin: 20,
+            nav: false,
+          }
+        }
+      });
+    });
+  </script>
+  <script>
+        $(document).ready(function (){
+            $("#scroll_btn").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#div1").offset().top
+                }, 2000);
+            });
+        });
+    </script>
+
+</body>
+</html>

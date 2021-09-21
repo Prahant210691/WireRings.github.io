@@ -1,0 +1,532 @@
+
+<html lang="en" >
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta charset="utf-8">
+  <title>Wire Ring</title>
+  <link rel="icon" href="img/favicon1.ico">
+  <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css" /> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
+ <!--  <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css"> -->
+<!--   <link href="css/uikit.css" rel="stylesheet" media="all"> -->
+  <link href="css/styles.css" rel="stylesheet" media="all">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+  <style type="text/css">
+   :root{
+    --text_color: #444;
+    --main_color: #27ae60;
+    --bg_color: rgba(46,204,113,0.1);
+}
+a:hover,a:focus{
+    text-decoration: none;
+    outline: none;
+}
+.vertical-tab{
+    font-family: 'Roboto', sans-serif;
+    display: table;
+}
+.vertical-tab .nav-tabs{
+   display: table-cell;
+   width: 20%;
+   min-width: 20%;
+   border: none;
+   vertical-align: top;
+   position: relative;
+}
+.vertical-tab .nav-tabs li{
+   float: none;
+   vertical-align: top;
+}
+.vertical-tab .nav-tabs li a{
+    color: var(--text_color);
+    background-color: transparent;
+    font-size: 18px;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 8px 30px;
+    margin: 0 -2px 0 0;
+    border-radius: 0;
+    border: 2px solid transparent;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: all 0.20s ease 0s;
+}
+.vertical-tab .nav-tabs li a:hover,
+.vertical-tab .nav-tabs li.active a,
+.vertical-tab .nav-tabs li.active a:hover{
+    color: var(--main_color);
+    background-color: var(--bg_color);
+    border: 2px solid var(--main_color);
+}
+.vertical-tab .nav-tabs li a:before,
+.vertical-tab .nav-tabs li a:after{
+    content: "";
+    background-color: var(--main_color);
+    width: 10px;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: -20%;
+    transition: all 0.3s ease 0s;
+}
+.vertical-tab .nav-tabs li a:after{
+    height: 15px;
+    width: 15px;
+    transform: translateY(-50%) rotate(45deg);
+    top: 50%;
+    transition: all 0.3s ease 0.1s;
+}
+.vertical-tab .nav-tabs li.active a:before,
+.vertical-tab .nav-tabs li a:hover:before{
+    opacity: 1;
+    left: 0;
+}
+.vertical-tab .nav-tabs li.active a:after,
+.vertical-tab .nav-tabs li a:hover:after{
+    opacity: 1;
+    left: -2px;
+    transition: all 0.3s ease 0s;
+}
+.vertical-tab .tab-content{
+    color: var(--text_color);
+    background-color: var(--bg_color);
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 10px;
+    padding: 10px 15px;
+    border-left: 2px solid var(--main_color);
+    display: table-cell;
+    position: relative;
+}
+.vertical-tab .tab-content h3{
+    color: var(--main_color);
+    text-transform: uppercase;
+    margin: 0 0 7px 0;
+}
+@media only screen and (max-width: 479px){
+    .vertical-tab .nav-tabs{
+        display: block;
+        width: 100%;
+        border-right: none;
+    }
+    .vertical-tab .tab-content{
+        display: block;
+        padding: 20px 15px 5px;
+    }
+    .vertical-tab .nav-tabs li a:before{
+        height: 5px;
+        width: 100%;
+        left: 0;
+    }
+    .vertical-tab .nav-tabs li a:after{
+        left: 50%;
+        top:-7px;
+        transform: translateX(-50%) translateY(0) rotate(45deg);
+    }
+    .vertical-tab .nav-tabs li.active a:after,
+    .vertical-tab .nav-tabs li a:hover:after{
+        left: 50%;
+        transform: translateX(-50%) translateY(0) rotate(45deg);
+    }
+    .vertical-tab .tab-content{
+        border-left: none;
+        border-bottom: 2px solid var(--main_color);
+    }
+    .vertical-tab .tab-content h3{ font-size: 18px; }
+}
+
+.floating_img{
+  float: right;
+  width:300px;
+  height:300px;
+  margin-left:15px;
+}
+
+
+
+
+
+
+
+.site-content {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1 0 auto;
+    -moz-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+}
+.featured-products-module {
+    text-align: center;
+}
+.page-content .inner-wrap {
+    padding-top: 4.25em;
+    padding-bottom: 3.0625em;
+}
+.featured-products-module .inner-wrap {
+    padding-top: 4.375em;
+    padding-bottom: 4.5em;
+}
+.inner-wrap > *:last-child {
+    margin-bottom: 0;
+}
+.inner-wrap > *:first-child{
+    margin-top: 0;
+}
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+.fpm-item {
+    max-width: 22.5em;
+    width: 100%;
+    margin: 0 auto 0px;
+    display: block;
+    position: relative;
+    border: 1px solid #b9b9b9;
+}
+.fpm-item-image {
+    overflow: hidden;
+    max-width: 22.375em;
+    width: 100%;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+.fpm-item-image img {
+    display: block;
+    width: 100%;
+    transform: scale(1, 1);
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+.fpm-item-title {
+    text-align: center;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: #ffffff;
+    display: block;
+    width: 100%;
+    background-color: #162848;
+    margin-bottom: 0;
+    font-size: 1.25em;
+    line-height: 1.45em;
+    font-weight: 800;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+.fpm-item:hover .fpm-item-image img {
+    transform: scale(1.25, 1.25);
+}
+.fpm-item:hover .fpm-item-title {
+    background-color: #b9b9b9;
+    color: #002367;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+
+@media (min-width: 60em){
+  .fpm-item-title {
+    font-size: 1.25em;
+}
+}
+
+@media (min-width: 40em){
+  .fpm-item:nth-of-type(3n-2) {
+    margin-left: 0;
+}
+.fpm-item {
+    float: none;
+    width: 29.91489361702128%;
+    margin-left: 2.127659574468085%;
+    display: inline-block;
+}
+.fpm-item-title {
+    font-size: 18px;
+}
+}
+
+
+
+
+
+
+
+
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="header_top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-6">
+            <ul>
+              <li class="email_style">
+                Email : <a class="dn_btn header_link" href="mailto: info@wirerings.in"><i class="fa fa-envelope"></i> info@wirerings.in</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-6">
+            <ul>
+              <li class="contact_style">Call : <a class="header_link" href="tel:+91-2525-254644">+91-2525-254644</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main_header product">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-sm-3">
+            <div class="logo">
+              <a href="index.html"><img src="img/logo.png" alt="0" class="logoclass"></a>
+            </div>
+          </div>
+          <div class="col-md-10 col-sm-9">
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="policies.html">Policies</a></li>
+                    <li class="active"><a href="product.html">Product</a></li>
+                    <!-- <li class="dropdown ">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="sheet_metal_stamping.html">Sheet Metal (Stamping)</a></li>
+                        <li><a href="precision_machining_components.html">precision machining components </a></li>
+                        <li><a href="copper_machining_components.html">copper machining components</a></li>
+                        <li><a href="multi_formed_parts.html">multi formed parts</a></li>
+                        <li><a href="MCB_parts.html">MCB parts</a></li>
+                        <li><a href="hardware_fastners.html">Hardware & fastners</a></li>
+                      </ul>
+                    </li> -->
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                  </ul>
+                </div>
+            </nav>
+          </div>
+        </div>
+        <section class="breadcrum_div">
+          <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 style="margin-bottom: 0;"><b>OUR PRODUCT</b></h1>
+            </div>
+          </div>
+          <div class="row">
+          <div class="col-md-12">
+            <ul class="breadcrumb custom_breadcrum">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="product.html">Product</a></li>
+            </ul>
+          </div>
+        </div>
+        </div>
+        </section>
+      </div>
+    </div>
+    <center><img src="img/product_bg_img1.jpg" alt="1" class="img-responsive bg-img" style="height: 430px;width: 100%;object-fit: cover;"></center>
+  </div>
+
+  <!-- <section class="contact_us" style="padding: 50px 0px;">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="vertical-tab" role="tabpanel">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab">Flat Rings</a></li>
+                    <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">Step Rings</a></li>
+                </ul>
+                <div class="tab-content tabs">
+                    <div role="tabpanel" class="tab-pane fade in active" id="Section1">
+                        <h3>Flat Rings</h3>
+                        <p><div class="floating_img">
+
+                          <div class="owl-carousel owl-theme owl-carousel5">
+                            <div class="item"><img src="img/1.png" alt="0" class="img-responsive"></div>
+                            <div class="item"><img src="img/1.1.png" alt="0" class="img-responsive"></div>
+                            <div class="item"><img src="img/1.2.png" alt="0" class="img-responsive"></div>
+                          </div>
+                          </div>
+
+
+
+                          These are manufactured from precise SECTIONAL - WIRES. Our in-house, designed and developed Section-Rolling Machines, like Turk Head, Flattening Machines and coiling Machines etc. give precise and desired Wire Cross - Section with uniform grain flow of material to produce ultimate quality where no bulging on inner side or contraction on outer diameter shall be seen whatsoever.</p>
+                          <p>Assuming economical batch quantities are required, Step-Circlips, Snap Rings, Retaining Rings, Conical Spring Washers & other Allied Wire Products can be produced as per a customer's individual designs and specifications, and receive the same close attention to application, design and manufacture as do our standard products. Where certain application requirements necessitate dimensional variations from standard specifications, we shall be pleased to advice on the amended performance under these conditions.</p>
+
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="Section2">
+                        <h3>Step Rings</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper, magna a ultricies volutpat, mi eros viverra massa, vitae consequat nisi justo in tortor. Proin accumsan felis ac felis dapibus, non iaculis mi varius.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  </section> -->
+
+
+  <section class="site-content page-content" role="main">
+    <article class="site-content-primary">
+      <div class="featured-products-module">
+        <div class="inner-wrap">
+          <div class="fpm-buckets-wrap clearfix">
+            <a href="Flat Ring.html" class="fpm-item">
+              <figure class="fpm-item-image">
+                <img src="img/1.png" alt="Compression Springs" title="Flat Ring">
+              </figure>
+              <h3 class="fpm-item-title">FLAT RINGS</h3>
+            </a>
+            <a href="Step Ring.html" class="fpm-item">
+              <figure class="fpm-item-image">
+                <img src="img/2.png" alt="Extension Springs" title="Step Ring">
+              </figure>
+              <h3 class="fpm-item-title">STEP RINGS</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  
+  
+  <div class="footer">
+    <div id="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-3 col-12">
+          <div class="">
+            <a href="index.html"><img src="img/footer_logo.png" alt="Logo" class="logoclass"></a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-3 col-12">
+          <div class="">
+            <!-- <h3>Contact Us</h3> -->
+            <p class="footer_text">Plot No 14/15, Dewan Udyog Nagar, Aliyali, Palghar West, Palghar 401404, Maharashtra, India.</p>
+            <p class="footer_text">Phone No: +91-2525-254644 / 55</p>
+            <p class="footer_text">Fax No: +91-2525-254668</p>
+            <p class="footer_text">Email: info@wirerings.in</p>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-3 col-12">
+          <div class="">
+            <h3 style="margin-top: 0px;">Quick Links</h3>
+            <ul class="footer_menu" style="padding-left: 0px;color: #fff;list-style-type: none;">
+              <li><a href="index.html" class="">Home</a></li>
+              <li><a href="aboutUs.html">About Us</a></li>
+              <li><a href="product.html">Products</a></li>
+              <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-3 col-12">
+          <div class="row footer-bottom_social d-flex justify-content-between">
+                  <div class="col-lg-12 col-sm-12 footer-social">
+                      <a href="#"><i class="fa fa-facebook-f"></i></a>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                      <a href="#"><i class="fa fa-google-plus"></i></a>
+                      <a href="#"><i class="fa fa-linkedin"></i></a>
+                  </div>
+              </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-12">
+          <div class="cc_text">Copyright 2019 @ WireRings | All Rights Reserved</div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+   <div class="side_btn">
+    <a href="./contactUs.html"><img src="img/enquiry_gif.gif" alt="side_btn" class="img-responsive" style="width: 85px"></a>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery.carouFredSel-6.0.4-packed.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/owl.carousel.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.owl-carousel5').owlCarousel({
+              loop: true,
+              margin: 10,
+              responsiveClass: true,
+              nav: false,
+              autoplay:true,
+              autoplayTimeout:3000,
+              responsive: {
+                0: {
+                  items: 1,
+                  nav: false
+                },
+                600: {
+                  items: 1,
+                  nav: false
+                },
+                1000: {
+                  items: 1,
+                  loop: true,
+                  margin: 20,
+                  nav: false,
+                }
+              }
+            });
+    });
+    
+  </script>
+
+
+
+
+
+</body>
+</html>
